@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
 import headerImg from "../assets/img/header-img.svg";
-import { useState, useEffect } from "react";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,23 +52,33 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hi! I'm Oleksandr Marchenko `}
-              <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tellus
-              conubia luctus condimentum id dis est orci proin vulputate justo
-              taciti blandit taciti tellus metus himenaeos hendrerit
-              pellentesque lectus diam facilisi platea non nibh viverra interdum
-              sollicitudin augue ipsum amet condimentum felis habitant orci
-              finibus.
-            </p>
-            <button onClick={() => console.log("connect2")}>
-              Let's connect
-              <BsArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi! I'm Oleksandr Marchenko `}
+                    <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Cras
+                    tellus conubia luctus condimentum id dis est orci proin
+                    vulputate justo taciti blandit taciti tellus metus himenaeos
+                    hendrerit pellentesque lectus diam facilisi platea non nibh
+                    viverra interdum sollicitudin augue ipsum amet condimentum
+                    felis habitant orci finibus.
+                  </p>
+                  <button onClick={() => console.log("connect2")}>
+                    Let's connect
+                    <BsArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={7}>
             <img src={headerImg} alt="Header Img" />

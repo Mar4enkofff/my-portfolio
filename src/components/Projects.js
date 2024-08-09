@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
@@ -44,15 +45,25 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tellus
-              conubia luctus condimentum id dis est orci proin vulputate justo
-              taciti blandit taciti tellus metus himenaeos hendrerit
-              pellentesque lectus diam facilisi platea non nibh viverra interdum
-              sollicitudin augue ipsum amet condimentum felis habitant orci
-              finibus.
-            </p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__slideInup" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Cras
+                    tellus conubia luctus condimentum id dis est orci proin
+                    vulputate justo taciti blandit taciti tellus metus himenaeos
+                    hendrerit pellentesque lectus diam facilisi platea non nibh
+                    viverra interdum sollicitudin augue ipsum amet condimentum
+                    felis habitant orci finibus.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
