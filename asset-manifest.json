@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio-on-react/static/css/main.58d21905.css",
-    "main.js": "/my-portfolio-on-react/static/js/main.3607f94c.js",
+    "main.css": "/my-portfolio-on-react/static/css/main.1e2713d8.css",
+    "main.js": "/my-portfolio-on-react/static/js/main.3c8dd4be.js",
     "static/js/453.0e26761c.chunk.js": "/my-portfolio-on-react/static/js/453.0e26761c.chunk.js",
     "static/media/color-sharp.png": "/my-portfolio-on-react/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/my-portfolio-on-react/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -26,12 +26,12 @@
     "index.html": "/my-portfolio-on-react/index.html",
     "static/media/nav-icon1.svg": "/my-portfolio-on-react/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/my-portfolio-on-react/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.58d21905.css.map": "/my-portfolio-on-react/static/css/main.58d21905.css.map",
-    "main.3607f94c.js.map": "/my-portfolio-on-react/static/js/main.3607f94c.js.map",
+    "main.1e2713d8.css.map": "/my-portfolio-on-react/static/css/main.1e2713d8.css.map",
+    "main.3c8dd4be.js.map": "/my-portfolio-on-react/static/js/main.3c8dd4be.js.map",
     "453.0e26761c.chunk.js.map": "/my-portfolio-on-react/static/js/453.0e26761c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58d21905.css",
-    "static/js/main.3607f94c.js"
+    "static/css/main.1e2713d8.css",
+    "static/js/main.3c8dd4be.js"
   ]
 }
