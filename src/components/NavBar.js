@@ -4,7 +4,8 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+// import navIcon3 from "../assets/img/nav-icon3.svg";
+import githublogo from "../assets/img/githublogo.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -69,19 +70,21 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://www.linkedin.com/in/oleksandr-marchenko-0205a8307/">
+                <img src={navIcon1} alt="linkedin logo" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://www.facebook.com/profile.php?id=100008751103247&locale=uk_UA">
+                <img src={navIcon2} alt="facebook adress" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+              <a href="https://github.com/Mar4enkofff">
+                <img src={githublogo} alt="github logo" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
+            <a href="https://t.me/+380999333652">
+              <button className="vvd">
+                <span>Let's Connect</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

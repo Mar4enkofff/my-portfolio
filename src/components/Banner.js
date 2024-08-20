@@ -72,10 +72,12 @@ export const Banner = () => {
                     viverra interdum sollicitudin augue ipsum amet condimentum
                     felis habitant orci finibus.
                   </p>
-                  <button onClick={() => console.log("connect2")}>
-                    Let's connect
-                    <BsArrowRightCircle size={25} />
-                  </button>
+                  <a href="https://t.me/+380999333652">
+                    <button>
+                      Let's connect
+                      <BsArrowRightCircle size={25} />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
