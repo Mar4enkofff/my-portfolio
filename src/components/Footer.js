@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Navbar } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-// import navIcon3 from "../assets/img/nav-icon3.svg";
 import githublogo from "../assets/img/githublogo.png";
+import myLogo from "../assets/img/my_logo.png";
 
 export const Footer = () => {
   return (
@@ -13,8 +12,10 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <MailchimpForm />
-          <Col sm={6}>
-            <img src={logo} alt="Logo" />
+          <Col sm={6} className="footer_logo text-center text-sm-start">
+            <Navbar.Brand href="#">
+              <img src={myLogo} alt="Logo" className="my-logo" />
+            </Navbar.Brand>
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">

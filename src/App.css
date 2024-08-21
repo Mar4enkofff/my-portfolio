@@ -63,7 +63,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 25%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -532,6 +532,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .contact-textarea {
+    padding: 0 5px;
+  }
+
+  .contact form button {
+    margin-left: 1px;
+  }
+}
+
 /* Newsletter Css*/
 .newsletter-bx {
   background: #ffffff;
@@ -600,6 +610,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 
+@media (max-width: 374px) {
+  .new-email-bx input {
+    padding: 0 8px;
+  }
+  .new-email-bx button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter-bx {
+    padding: 20px 32px;
+  }
+  .new-email-bx button {
+    padding: 10px 25px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .newsletter-bx {
+    padding-top: 28px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .new-email-bx button {
+    padding: 15px 40px;
+  }
+}
+
 /* Footer Css*/
 .footer {
   padding: 0 0 50px 0;
@@ -619,4 +658,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
   letter-spacing: 0.5px;
   color: #b8b8b8;
+}
+
+.footer_logo {
+  padding: 10px 12px;
+}
+
+.my-logo {
+  min-width: 290px;
+  min-height: 40px;
 }

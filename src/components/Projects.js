@@ -59,12 +59,9 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Cras
-                    tellus conubia luctus condimentum id dis est orci proin
-                    vulputate justo taciti blandit taciti tellus metus himenaeos
-                    hendrerit pellentesque lectus diam facilisi platea non nibh
-                    viverra interdum sollicitudin augue ipsum amet condimentum
-                    felis habitant orci finibus.
+                    Here you can see my portfolio of projects where design,
+                    development, and innovation come together to solve
+                    real-world challenges.
                   </p>
                 </div>
               )}
@@ -93,8 +90,16 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum1</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum2</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <div className="d-flex justify-content-center align-items-center">
+                    Content under construction
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <div className="d-flex justify-content-center align-items-center">
+                    Currently in progress
+                  </div>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

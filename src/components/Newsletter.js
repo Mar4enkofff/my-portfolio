@@ -10,11 +10,13 @@ export const Newsletter = ({ onValidated, status, message }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    email &&
-      email.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email,
-      });
+    if (email && email.indexOf("@") > -1) {
+      try {
+        onValidated({ EMAIL: email });
+      } catch (error) {
+        console.error("Error during validation:", error);
+      }
+    }
   };
 
   const clearFields = () => {
@@ -33,7 +35,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
-          <Col md={6} xl={7}>
+          <Col lg={11} md={6} xl={7}>
             <form onSubmit={handleSubmit}>
               <div className="new-email-bx">
                 <input

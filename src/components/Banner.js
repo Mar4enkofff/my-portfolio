@@ -65,12 +65,14 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Cras
-                    tellus conubia luctus condimentum id dis est orci proin
-                    vulputate justo taciti blandit taciti tellus metus himenaeos
-                    hendrerit pellentesque lectus diam facilisi platea non nibh
-                    viverra interdum sollicitudin augue ipsum amet condimentum
-                    felis habitant orci finibus.
+                    Front-End Developer with 1.5+ years of experience in
+                    creating intuitive and functional web application
+                    interfaces. Proficient in HTML, CSS, JavaScript, and popular
+                    frameworks like React. Strong understanding of responsive
+                    design principles and ensuring high website performance.
+                    Continuously keeping up with new technologies and
+                    innovations in web development, aiming to deliver modern and
+                    efficient user solutions.
                   </p>
                   <a href="https://t.me/+380999333652">
                     <button>

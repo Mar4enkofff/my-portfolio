@@ -37,9 +37,10 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Cras tellus
-                conubia luctus condimentum id dis est orci proin vulputate justo
-                taciti blandit taciti tellus metus himenaeos
+                Showcasing a diverse range of skills in web development, design,
+                and problem-solving. Proficient in modern technologies, creative
+                thinking, and delivering high-quality, innovative solutions for
+                digital projects.
               </p>
               <Carousel
                 responsive={responsive}
